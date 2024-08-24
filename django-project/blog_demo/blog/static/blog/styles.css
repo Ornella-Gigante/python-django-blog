@@ -1,0 +1,79 @@
+body {
+    font-family: 'Fira Code', monospace; /* Cambia la fuente a un estilo más geek */
+    padding: 0;
+    margin: 0;
+    background: url('../blog/fondo.png') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Asegura que el contenido ocupe al menos la altura de la ventana */
+}
+
+main {
+    max-width: 350px; /* Reduce el ancho máximo del cuerpo */
+    margin: 3rem auto; /* Añade margen superior e inferior para separar del borde de la ventana */
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle un efecto flotante */
+}
+
+h1 { 
+    font-size: 1.8rem;  
+    margin-bottom: 1rem;
+}
+
+h2 { 
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+h3 { 
+    font-size: 1.5rem; 
+    color: rgb(143, 51, 120);
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+p { 
+    font-size: 0.9rem; 
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+} 
+
+a { 
+    font-size: 1rem; 
+    color: rgb(243, 115, 255);
+}
+
+a:hover { 
+    color: rgb(153, 66, 149);
+}
+
+p > a { 
+    font-size: 1rem !important; 
+    text-align: justify;
+}
+
+
+/* Centrar el enlace "Editar entrada" */
+p a.edit {
+    display: block; /* Hacer que el enlace actúe como un bloque para permitir la centración */
+    text-align: center; /* Centra el texto dentro del enlace */
+    color: rgb(255, 69, 230); /* Color rosa */
+    text-decoration-line: true; /* Opcional: Elimina el subrayado del enlace */
+    margin: 1rem 0; /* Espacio vertical alrededor del enlace */
+}
+
+a.edit:hover {
+    color: rgb(70, 19, 63);
+}
+
+img.top {
+    height: 150px;
+    width: 150px;
+    padding: 0.5rem 0 1rem;
+}

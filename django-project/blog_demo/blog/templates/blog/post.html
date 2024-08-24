@@ -1,0 +1,25 @@
+
+{% extends "blog/base.html" %}
+
+{%block title%}{{post.title}} . Blog{% endblock %}
+
+{% block content %}
+   
+
+        <div>
+            <h3>{{post.title}}</h3>
+            <span class="date">{{ post.created | date:"SHORT_DATE_FORMAT" }}</span>
+            <p class="edicion">{{post.content}}</p>
+            {% if request.user.is_authenticated and user.is_staff %}
+                <p>
+                    <a href="{% url 'admin:blog_post_change' post.id %}" class="edit"> Editar entrada</a>
+                </p>
+
+            {%endif%}
+            <a href= "{% url 'home' %}">Volver a la portada</a>
+        </div> 
+
+
+{% endblock %}
+
+    

@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+
+{%block title%}Blog{% endblock %}
+
+{% block content %}
+    
+  
+    {% for post in posts %}
+        <div>
+            <h3>🩷{{ post.title }}🩷</h3> 
+            <span class="date">{{ post.created|date }}</span>
+            <p>{{ post.content|truncatewords:"10" }}</p>
+            <a href="{% url 'post' id=post.id%}">Leer más</a>
+            </div> 
+
+    {% endfor %}
+{% endblock %}
+
+    
