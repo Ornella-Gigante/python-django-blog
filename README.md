@@ -58,7 +58,13 @@ $ pipenv run python manage.py makemigrations blog
 $ pipenv run python manage.py migrate blog
 
 
+
 * Verify the Database
 You can use a tool like DB Browser for SQLite to view and manipulate the tables of your models. Warning: Directly modifying table fields may cause issues with the application.
 
+
+
+# How does it look: 
+
+![Image_demo](https://github.com/Ornella-Gigante/python-django-blog/raw/main/django-project/blog_demo/blog/static/blog/blog_done.png)
 
