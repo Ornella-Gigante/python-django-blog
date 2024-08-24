@@ -1,4 +1,4 @@
-📝 # Models in Django
+# Models in Django
 
 ## This is a model that I made using Django. Models are classes that define the structure of data for the database. For our simple blog, we'll need to store entries with a title and content, both as text.
 
